@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.joaopaulovieira.dev_quiz_flutter_jpvp">
    <application
-        android:label="dev_quiz_flutter_jpvp"
+        android:label="Dev Quiz Flutter"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
