@@ -1,0 +1,25 @@
+name: dev_quiz_flutter_jpvp
+description: DevQuiz - [NLW#5] Trilha Flutter
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  assets:
+    - assets/images/
+
+  uses-material-design: true
+
