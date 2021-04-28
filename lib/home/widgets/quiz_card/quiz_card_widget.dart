@@ -1,11 +1,18 @@
+import 'package:flutter/material.dart';
+
 import 'package:dev_quiz_flutter_jpvp/core/app_colors.dart';
 import 'package:dev_quiz_flutter_jpvp/core/app_images.dart';
 import 'package:dev_quiz_flutter_jpvp/core/app_text_styles.dart';
 import 'package:dev_quiz_flutter_jpvp/shared/widgets/progress_indicator/progress_indicator_widget.dart';
-import 'package:flutter/material.dart';
 
 class QuizCardWidget extends StatelessWidget {
-  const QuizCardWidget({Key? key}) : super(key: key);
+  final String title;
+  final String completed;
+  const QuizCardWidget({
+    Key? key,
+    required this.title,
+    required this.completed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +35,7 @@ class QuizCardWidget extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Text('Gerenciamento de Estado', style: AppTextStyles.heading15),
+          Text(title, style: AppTextStyles.heading15),
           SizedBox(
             height: 19,
           ),
@@ -37,7 +44,7 @@ class QuizCardWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  '3/10',
+                  completed,
                   style: AppTextStyles.body11,
                 ),
               ),
