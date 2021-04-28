@@ -19,12 +19,20 @@ class QuestionIndicatorWidget extends StatelessWidget {
                   'Questão 04',
                   style: AppTextStyles.body,
                 ),
-                Text('de 10', style: AppTextStyles.body)
+                Text(
+                  'de 10',
+                  style: AppTextStyles.body,
+                )
               ],
             ),
           ),
-          ProgressIndicatorWidget(value: 0.7),
-          //TODO: Aula 02 - 01:13
+          SizedBox(
+            height: 16,
+          ),
+          ProgressIndicatorWidget(
+            value: 0.7,
+          ),
+          //
         ],
       ),
     );
