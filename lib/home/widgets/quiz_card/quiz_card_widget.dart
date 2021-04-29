@@ -8,10 +8,12 @@ import 'package:dev_quiz_flutter_jpvp/shared/widgets/progress_indicator/progress
 class QuizCardWidget extends StatelessWidget {
   final String title;
   final String completed;
+  final double percent;
   const QuizCardWidget({
     Key? key,
     required this.title,
     required this.completed,
+    required this.percent,
   }) : super(key: key);
 
   @override
@@ -48,7 +50,7 @@ class QuizCardWidget extends StatelessWidget {
                   style: AppTextStyles.body11,
                 ),
               ),
-              Expanded(flex: 4, child: ProgressIndicatorWidget(value: 0.3))
+              Expanded(flex: 4, child: ProgressIndicatorWidget(value: percent))
             ],
           )
         ],
