@@ -44,16 +44,16 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   LevelButtonWidget(
-                    label: 'Fácil',
+                    label: "Fácil",
                   ),
                   LevelButtonWidget(
-                    label: 'Médio',
+                    label: "Médio",
                   ),
                   LevelButtonWidget(
-                    label: 'Difícil',
+                    label: "Difícil",
                   ),
                   LevelButtonWidget(
-                    label: 'Perito',
+                    label: "Perito",
                   )
                 ],
               ),
@@ -63,15 +63,15 @@ class _HomePageState extends State<HomePage> {
               Expanded(
                 child: GridView.count(
                   crossAxisSpacing: 16,
-                  crossAxisCount: 2,
                   mainAxisSpacing: 16,
+                  crossAxisCount: 2,
                   children: controller.quizzes!
                       .map(
                         (e) => QuizCardWidget(
                           title: e.title,
-                          completed:
-                              '${e.questionAnswered}/${e.questions.length}',
                           percent: e.questionAnswered / e.questions.length,
+                          completed:
+                              "${e.questionAnswered}/${e.questions.length}",
                         ),
                       )
                       .toList(),

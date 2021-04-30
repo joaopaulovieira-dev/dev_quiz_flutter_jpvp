@@ -1,5 +1,7 @@
 # dev_quiz_flutter_jpvp
 
+[![wakatime](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp.svg)](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp)
+
 A new Flutter project.
 
 ## Getting Started
