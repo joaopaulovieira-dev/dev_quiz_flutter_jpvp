@@ -1,3 +1,4 @@
+import 'package:dev_quiz_flutter_jpvp/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:dev_quiz_flutter_jpvp/challenge/widgets/question_indicator/questiona_indicator_widget.dart';
 import 'package:dev_quiz_flutter_jpvp/challenge/widgets/quiz/quiz_widiget.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,16 @@ class ChallengePage extends StatelessWidget {
       ),
       body: QuizWidget(
         title: 'O que o Flutter faz em sua totalidade?',
+      ),
+      bottomNavigationBar: SafeArea(
+        bottom: true,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Expanded(child: NextButtonWidget.white(label: 'Pular')),
+            Expanded(child: NextButtonWidget.green(label: 'Confirmar')),
+          ],
+        ),
       ),
     );
   }
