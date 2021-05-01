@@ -6,21 +6,24 @@ class NextButtonWidget extends StatelessWidget {
   final String label;
   final Color backgroudColor;
   final Color fontColor;
-  const NextButtonWidget({
-    Key? key,
-    required this.label,
-    required this.backgroudColor,
-    required this.fontColor,
-  });
+  final Color borderColor;
+  const NextButtonWidget(
+      {Key? key,
+      required this.label,
+      required this.backgroudColor,
+      required this.fontColor,
+      required this.borderColor});
 
   NextButtonWidget.green({required String label})
-      : this.backgroudColor = AppColors.green,
+      : this.backgroudColor = AppColors.darkGreen,
         this.fontColor = AppColors.white,
+        this.borderColor = AppColors.green,
         this.label = label;
 
   NextButtonWidget.white({required String label})
       : this.backgroudColor = AppColors.white,
         this.fontColor = AppColors.grey,
+        this.borderColor = AppColors.border,
         this.label = label;
 
   @override
@@ -29,27 +32,25 @@ class NextButtonWidget extends StatelessWidget {
       height: 48,
       child: TextButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
-            backgroudColor,
-          ),
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+            backgroundColor: MaterialStateProperty.all(
+              backgroudColor,
             ),
-          ),
-        ),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            side: MaterialStateProperty.all(BorderSide(color: borderColor))),
         onPressed: () {},
         child: Text(
           label,
           style: GoogleFonts.notoSans(
             fontWeight: FontWeight.w600,
             fontSize: 15,
-            color: AppColors.white,
+            color: fontColor,
           ),
         ),
       ),
     );
   }
 }
-
-//TODO AULA 04 00:26:10
