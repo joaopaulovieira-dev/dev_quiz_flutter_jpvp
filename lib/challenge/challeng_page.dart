@@ -26,11 +26,19 @@ class ChallengePage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Expanded(child: NextButtonWidget.white(label: 'Pular')),
+              Expanded(
+                  child: NextButtonWidget.white(
+                label: 'Pular',
+                onTap: () {},
+              )),
               SizedBox(
                 width: 7,
               ),
-              Expanded(child: NextButtonWidget.green(label: 'Confirmar')),
+              Expanded(
+                  child: NextButtonWidget.green(
+                label: 'Confirmar',
+                onTap: () {},
+              )),
             ],
           ),
         ),

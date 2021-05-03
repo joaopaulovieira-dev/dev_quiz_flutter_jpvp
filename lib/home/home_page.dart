@@ -1,3 +1,4 @@
+import 'package:dev_quiz_flutter_jpvp/challenge/challeng_page.dart';
 import 'package:dev_quiz_flutter_jpvp/core/app_colors.dart';
 import 'package:dev_quiz_flutter_jpvp/home/home_controller.dart';
 import 'package:dev_quiz_flutter_jpvp/home/home_state.dart';
@@ -72,6 +73,14 @@ class _HomePageState extends State<HomePage> {
                           percent: e.questionAnswered / e.questions.length,
                           completed:
                               "${e.questionAnswered}/${e.questions.length}",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ChallengePage(),
+                              ),
+                            );
+                          },
                         ),
                       )
                       .toList(),
