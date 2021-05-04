@@ -10,10 +10,16 @@ class ChallengePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
+        preferredSize: Size.fromHeight(86),
         child: SafeArea(
           top: true,
-          child: QuestionIndicatorWidget(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              BackButton(),
+              QuestionIndicatorWidget(),
+            ],
+          ),
         ),
       ),
       body: QuizWidget(
@@ -35,10 +41,11 @@ class ChallengePage extends StatelessWidget {
                 width: 7,
               ),
               Expanded(
-                  child: NextButtonWidget.green(
-                label: 'Confirmar',
-                onTap: () {},
-              )),
+                child: NextButtonWidget.green(
+                  label: 'Confirmar',
+                  onTap: () {},
+                ),
+              ),
             ],
           ),
         ),
