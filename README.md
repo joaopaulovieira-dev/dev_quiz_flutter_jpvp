@@ -1,17 +1,13 @@
 <h1 align="center">
-  <img alt="DevQuiz" title="DevQuiz" src=".github/logo.png" />
+  <img alt="DevQuiz" title="DevQuiz" src="https://raw.githubusercontent.com/rocketseat-education/nlw-05-flutter/main/.github/logo.png" />
 </h1>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+  <img alt="License" src="https://raw.githubusercontent.com/rocketseat-education/nlw-05-flutter/main/.github/devquiz.png">
 
  
 </p>
 <br>
-
-<p align="center">
-  <img alt="DevQuiz" src=".github/devquiz.png" width="100%">
-</p>
 
  [![wakatime](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp.svg)](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp)
 
@@ -41,4 +37,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Desenvolvido com ♥  durante a semana <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW#05" /> - Next Level Week da Rocketseat 👋🏻
+Desenvolvido com ♥ durante a semana <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW#05" /> - Next Level Week da Rocketseat 👋🏻
