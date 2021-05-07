@@ -9,10 +9,6 @@
 </p>
 <br>
 
-<p align="center">
-  <img alt="DevQuiz" src=".github/devquiz.png" width="100%">
-</p>
-
  [![wakatime](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp.svg)](https://wakatime.com/badge/github/joaopaulovieira-dev/dev_quiz_flutter_jpvp)
 
 ## ✨ Tecnologias
@@ -41,4 +37,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Desenvolvido com ♥  durante a semana <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW#05" /> - Next Level Week da Rocketseat 👋🏻
+Desenvolvido com ♥ durante a semana <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW#05" /> - Next Level Week da Rocketseat 👋🏻
