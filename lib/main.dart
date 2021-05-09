@@ -6,21 +6,9 @@ void main() {
   runApp(AppWidget());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Dev Quiz Flutter',
-      theme: ThemeData(
-        primaryColor: Colors.green,
-        primarySwatch: Colors.green,
-        buttonColor: Colors.green,
-      ),
-      home: AppWidget(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
+//Link do Figma: https://www.figma.com/file/8mwRz7DGHbIpxeTj3okpKo/DevQuiz-Flutter?node-id=0%3A1
 
-//TODO: Desafio - Alterar a cor de splash do botão "Pular" para verde (pois atualmente esta azul).
-//TODO: Aula 04 - 01:16:00
+//TODO: 1 - Desafio: Alterar a cor de splash do botão "Pular" para verde (pois atualmente esta azul).
+//TODO: 2 - Desafio: Deixar a result_page.dart mais dinâmica, altrando a imagem para equivalencia de % de acetos ou seja trocando a imagem.
+
+//TODO: Aula 05 - 00:44:48

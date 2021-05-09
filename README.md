@@ -31,10 +31,6 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 - Clone o repositório
 - Inicie seu app com `flutter run`
 
-## 📄 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 ---
 
 Desenvolvido com ♥ durante a semana <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW#05" /> - Next Level Week da Rocketseat 👋🏻
