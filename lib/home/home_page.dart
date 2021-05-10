@@ -79,15 +79,20 @@ class _HomePageState extends State<HomePage> {
                               MaterialPageRoute(
                                 builder: (context) => ChallengePage(
                                   questions: e.questions,
+                                  title: e.title,
                                 ),
                               ),
                             );
                           },
+                          image: e.image,
                         ),
                       )
                       .toList(),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 12,
+              ),
             ],
           ),
         ),
