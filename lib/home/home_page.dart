@@ -84,11 +84,15 @@ class _HomePageState extends State<HomePage> {
                               ),
                             );
                           },
+                          image: e.image,
                         ),
                       )
                       .toList(),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 12,
+              ),
             ],
           ),
         ),
